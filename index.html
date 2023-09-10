@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Advice generator app</title>
+  <link rel="stylesheet" href="output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-Manrope bg-Dark-Blue">
+  <article
+    class="bg-Dark-Grayish-Blue w-[342px] pb-16 mx-auto my-20 rounded-xl px-[30px] pt-10 text-center relative md:w-[540px]">
+
+    <h2 class="text-Neon-Green uppercase mb-6 tracking-[4px] text-xs">Advice #<span id="adviceId"></span></h2>
+
+    <p class="text-Light-Cyan text-[22px] font-extrabold mb-6" id="advice"></p>
+    <picture>
+      <source media="(max-width: 640px)" srcset="./images/pattern-divider-mobile.svg">
+      <source media="(min-width: 641px)" srcset="./images/pattern-divider-desktop.svg">
+      <img src="" alt="" class="mx-auto">
+    </picture>
+
+    <div
+      class="bg-Neon-Green w-[66px] h-[66px] rounded-full grid place-content-center absolute bottom-[-33px] left-[138px] cursor-pointer hover:drop-shadow-[0_0_16px_hsl(150,100%,66%)] md:left-[237px]"
+      id="diceBtn">
+      <img src="./images/icon-dice.svg" alt="dice">
+    </div>
+
+  </article>
+
+  <footer class="text-Light-Cyan text-center text-sm">
+    Challenge by <a class="text-Neon-Green" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+      Mentor</a>.
+    Coded by <a class="text-Neon-Green" href="#">Alejandro Meza</a>.
+  </footer>
+  <script src="./main.js"></script>
+</body>
+
+</html>
